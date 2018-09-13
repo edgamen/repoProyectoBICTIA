@@ -1,0 +1,132 @@
+/*Hoja de estilos para proyecto de sitio de orientacion en RGPD por @edgamen*/
+@font-face {
+    font-family: "Open Sans";
+    font-style: normal;
+    font-weight: normal;
+    src: local("?"), url("../fuentes/Open_Sans/opensans_regular.otf") format("otf"), url("../fuentes/Open_Sans/OpenSans-Regular.ttf") format("truetype");
+}
+
+body{
+    
+    background-color: rgb(22, 78, 156);
+    font-family: 'Open Sans','Roboto', sans-serif;
+
+}
+header{
+    background-color: rgb(22, 78, 156);
+    border: 1px solid blue;
+}
+nav{
+    background-color: rgb(53, 99, 163);
+    float: right;
+    width: 100%;
+    text-align: center;
+    border: 1px solid black;
+    
+}
+nav ul{
+    list-style-type: none;
+    padding-left: 0px;
+}
+
+nav li{
+    list-style-type: none;
+    display: inline-block;
+     width: 19%;
+    
+}
+
+nav a{
+    font-size: large;
+    color: #181818;
+    padding-bottom: 3px;
+    text-decoration: none;
+}
+main{
+    
+    border: 1px solid red;
+  
+}
+
+aside{
+    overflow: auto;
+    float: right;
+    position: relative;
+    width: 24.5%;
+    background-color: rgb(118, 154, 203);
+    color: white;
+    font-size: normal;
+    vertical-align: top;
+    margin: 0px;
+}
+
+section{
+    
+    float: left;
+    background-color: rgb(168, 193, 226);
+    
+    width: 75%;
+    border: 1px solid yellow;
+    margin: 0px;
+    
+
+}
+
+article{
+
+display: inline-block;
+border: 1px solid gray;
+}
+
+footer{
+    float: left;
+    
+    background-color: rgb(255, 227, 154);
+    border: 1px solid white;
+    display: inline-table;
+    width: 100%;
+    vertical-align: bottom;
+
+}
+
+footer ul{
+    list-style-type: none;
+    padding-left: 0px;
+}
+
+footer li{
+    list-style-type: none;
+    display: inline-block;
+     width: 16%;
+    
+}
+
+footer a{
+    
+    color: #181818;
+    padding-bottom: 3px;
+    text-decoration: none;
+}
+
+h1{
+    text-align: right;
+    color: rgb(255, 227, 154);
+
+}
+
+h2{
+        color: #181818;
+}
+
+h3{
+    text-align: center;
+    color: #181818;
+}
+
+h6{
+    text-align: center;
+}
+
+
+
+
