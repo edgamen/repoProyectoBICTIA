@@ -43,9 +43,12 @@ nav a{
     text-decoration: none;
 }
 main{
+}
+
+p{
+    text-align: justify;
+    margin: 2%;
     
-    border: 1px solid red;
-  
 }
 
 aside{
@@ -54,16 +57,17 @@ aside{
     position: relative;
     width: 24.5%;
     background-color: rgb(118, 154, 203);
-    color: white;
+    color: #181818;
     font-size: normal;
     vertical-align: top;
     margin: 0px;
 }
 
 section{
+    background-color: #E3DAC9;
     
     float: left;
-    background-color: rgb(168, 193, 226);
+    /*background-color: rgb(168, 193, 226);*/
     
     width: 75%;
     /*border: 1px solid yellow;*/
@@ -73,15 +77,21 @@ section{
 }
 
 article{
+    
 
 display: inline-block;
 border: 1px solid gray;
+
+/*#f4f0ea
+#f8f5f1
+#fbfaf8*/
 }
 
 footer{
     float: left;
-    
-    background-color: rgb(255, 227, 154);
+    background-color: rgb(118, 154, 203);
+   /* background-color: rgb(168, 193, 226);
+    background-color: rgb(255, 227, 154);*/
     border: 1px solid white;
     display: inline-table;
     width: 100%;
@@ -110,22 +120,31 @@ footer a{
 
 h1{
     text-align: right;
-    color: rgb(255, 227, 154);
+    /*color: rgb(255, 227, 154);*/
+    color: #E3DAC9;
+    margin-left: 2%;
+    margin-right:2%;
+
 
 }
 
 h2{
+    background-color: rgb(118, 154, 203);
         color: #181818;
+        
 }
 
 h3{
     text-align: center;
     color: #181818;
+    margin-left: 2%;
+    margin-right:2%;
 }
 h4{
     padding: 0px;
     margin-bottom: 2px;
     margin-top: 2px;
+    margin-left: 2%;
 }
 
 h6{
