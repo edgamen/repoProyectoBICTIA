@@ -55,7 +55,7 @@ header{
 nav{
     background-color: rgb(53, 99, 163);
     float: right;
-    width: 100%;
+    /*width: 100%;*/
     text-align: center;
     border: 1px solid black;
     
@@ -135,6 +135,7 @@ p{
 
 #noticias{
     background-color: rgb(98, 139, 197);
+    margin:12px 0% 0% 0% ;
     
 }
 aside{
