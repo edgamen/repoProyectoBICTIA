@@ -133,9 +133,10 @@ p{
     
 }
 
-#noticias{
+.noticias{
     background-color: rgb(98, 139, 197);
-    margin:12px 0% 0% 0% ;
+    margin:12px 1% 0% 1% ;
+    border-radius: 2px;
     
 }
 #usoDatos{
@@ -146,6 +147,9 @@ p{
     width: 100%;
     text-align: center;
     
+}
+.inforgpd>p>a{
+    text-decoration: none;
 }
 aside{
     overflow: auto;
