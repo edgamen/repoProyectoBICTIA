@@ -138,6 +138,15 @@ p{
     margin:12px 0% 0% 0% ;
     
 }
+#usoDatos{
+    background-color: rgb(98, 139, 197);
+    margin:12px 0% 0% 0% ;
+}
+#formulario{
+    width: 100%;
+    text-align: center;
+    
+}
 aside{
     overflow: auto;
     float: right;

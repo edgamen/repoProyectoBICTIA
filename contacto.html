@@ -18,7 +18,7 @@
             <h1>Regulacion General para Proteccion de Datos</h1>
 
         </div>
-        <nav>
+        <nav class="col-12">
             <ul>
                 <li>
                    <a href="index.html">INICIO</a> 
@@ -43,34 +43,37 @@
             <section>
                     <h2>CONTACTO</h2>
 
-                    <article>
+                    <article id="formulario" >
                         <h4>
                             Formulario de contacto.
                         </h4>
-                            <p class="inforgpd">
-                                    Litora cras urna lacinia himenaeos integer, posuere hendrerit arcu congue faucibus morbi, nulla malesuada
-                                     molestie risus. Molestie mi odio imperdiet magna vitae egestas risus velit luctus duis pretium sodales
-                                      volutpat, dictumst magnis tempus ac non inceptos nisi dignissim blandit justo consequat lectus. <a href="#">Ver mas...</a>
-                                       
-                            </p>
+                        <form action="post">
+                            <p>Nombre: <input type="text"></p>
+                            <p>Email: <input type="email"></p>
+                            <p>Mensaje: <input type="text"></p>
+                            <p>Desea que guardemos sus datos para posterior contacto?:</p>
+                            <p> <input type="checkbox" name="pdacepto" >Si acepto.</p>
+                            <p> <input type="checkbox" name="pdnoacepto">No acepto.</p>
+                            <p>Reconoce haber leido y aceptar la politica de proteccion de datos del sitio?<br> Si <input type="checkbox" name="tycacepto"> No <input type="checkbox" name="tycnoacepto"></p>
+                            
+                        </form>
+                          
 
                     </article>
-                    
-                          
-                      
                    
-                    
         
                 </section>
 
         
         <aside>
-                <h3>USO DE DATOS</h3>
+                <h3 id="usoDatos">USO DE DATOS</h3>
                 <article class="politica">
                     <p>
                             
-                            Mollis quis interdum elementum eros felis morbi eleifend ad,
-                              malesuada urna commodo himenaeos dictumst sed class cursus convallis
+                            Los datos recolectados por los formularios en el sitio web solo seran usados para contacto y respuesta al usuario que asi lo autorize, de manera explicita. Estos datos no seran compartidos ni facilitados para tratamiento por terceros.
+                            En caso de no autorizacion, esta informacion sera descartada. <br>
+                            En  caso afirmativo, el usuario tendra la posibilidad de contactar con el correo <a href="mailto:datospersonales@sitio.com">datospersonales@sitio.com</a>  
+                            y realizar la solicitud de retiro, correccion y verificacion de estado  de su informacion.
     
                     </p>
     
