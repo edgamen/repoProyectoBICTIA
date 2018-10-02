@@ -11,15 +11,12 @@
     box-sizing: border-box;
 }
 
-/* For mobile phones: */
+/* Para mobile: */
 [class*="col-"] {
     width: 100%;
-}
-
-/* Extra small devices (phones, 600px and down) 
-@media only screen and (max-width: 600px) {
     
-} */
+    
+}
 
 /* Para tablets*/
 @media only screen and (min-width: 600px) {
@@ -35,12 +32,16 @@
     .col-s-10 {width: 83.33%;}
     .col-s-11 {width: 91.66%;}
     .col-s-12 {width: 100%;}
+    
+    
 } 
 
 /* Para escritorio */
 @media only screen and (min-width: 768px) {
     .col-1 {width: 8.33%;}
     .col-2 {width: 16.66%;}
+    .col-25 {width: 20%;}
+    .col-251 {width: 19.6%;}
     .col-3 {width: 24.5%;}/*Se cambia de 25%*/
     .col-4 {width: 33.33%;}
     .col-5 {width: 41.66%;}
@@ -52,6 +53,7 @@
     .col-11 {width: 91.66%;}
     .col-12 {width: 100%;}
 } 
+
 
 /*https://www.w3schools.com/css/tryit.asp?filename=tryresponsive_col-s*/
 
@@ -74,14 +76,13 @@ header nav{
     float: right;
     /*width: 100%;*/
     text-align: center;
-    border: 1px solid black;
-    margin:20px auto;
+    
+    margin:0px auto;
+    
     
 }
 
-.menu_bar {
-	display:none;
-}
+
 
 header nav ul{
    
@@ -99,39 +100,33 @@ header nav ul li{
     list-style-type: none;
     display: inline-block;
     /*width: 19%;*/
-    border-right: 1px solid #bbb;
     height: 100%;
     float:left;
             
-        }
+}
+
+header nav ul li a:visited{
+    
+    color: rgb(168, 193, 226);
+        
+}
+
 header nav ul li a:hover{
     border: 1px solid #181818;
     background-color: #E3DAC9;
     font-weight: bolder;
-    font-size: large;
+    text-decoration: underline;
+    /*font-size: large;**/
     transition: 2s;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);/*Se agregan sombras*/
     
 }
 
-header nav ul li a.active {
+header nav ul li a:active {
     background-color: #E3DAC9;
     color: #181818;
 }
 
-
-
-header nav li:last-child {
-    border-right: none;
-}
-
-nav li:hover{
-    
-    list-style-type: none;
-    display: inline-block;
-    width: 19%;
-    transition: 2s;
-    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);/*Se agregan sombras*/
-}
 
 header nav ul li a{
     /*display: block;
@@ -147,9 +142,9 @@ header nav ul li a{
 	display:block;
     text-decoration: none;
 }
-header nav ul li span {
+/*header nav ul li span {
 	margin-right:10px;
-}
+}*/
 
 nav a:hover{
     color: #181818;
@@ -185,8 +180,9 @@ p{
 }
 aside{
     overflow: auto;
-    float: right;
-    position: relative;
+    display: inline-block;
+    /*float: right;
+    position: relative;*/
     width: 24.5%;
     /*background-color: rgb(98, 139, 197);*/
     color: #181818;
@@ -224,8 +220,8 @@ footer{
     float: left;
     background-color: rgb(118, 154, 203);
    /* background-color: rgb(168, 193, 226);
-    background-color: rgb(255, 227, 154);*/
-    border: 1px solid white;
+    background-color: rgb(255, 227, 154);
+    border: 1px solid white;*/
     display: inline-table;
     width: 100%;
     vertical-align: bottom;
@@ -235,19 +231,22 @@ footer{
 
 footer ul{
     list-style-type: none;
-    padding-left: 0px;
-}
-
-footer li{
-    text-align: center;
-    list-style-type: none;
-    display: inline-block;
-     width: 16%;
-     padding-left: 20px;
+    padding-left: 20px;
     
 }
 
-footer a{
+footer ul li{
+    text-align: center;
+    list-style-type: none;
+    
+    display: inline-block;
+    /*float: left;
+    padding-left: 10px;*/
+    width: 19.6%;
+    
+}
+
+footer ul li a{
     
     color: #181818;
     padding-bottom: 3px;
@@ -260,7 +259,9 @@ h1{
     /*color: rgb(255, 227, 154);*/
     color: #E3DAC9;
     margin-left: 2%;
-    margin-right:2%;
+    margin-right: 2%;
+    /*margin-top: 0%;
+    margin-bottom: 0%;*/
 
 
 }
