@@ -74,6 +74,7 @@ body#inforgpd ul.menu li:nth-child(3) a,
 body#noticias ul.menu li:nth-child(4) a,
 body#contacto ul.menu li:nth-child(5) a{
     background-color: #E3DAC9;
+    border: 1px solid #181818; 
 }
 
 header{
