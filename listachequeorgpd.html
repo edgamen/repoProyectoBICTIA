@@ -48,11 +48,16 @@
                             <input id="tab-uno" type="radio" name="tabs">
                             <label for="tab-uno">Roles de la organización frente a los datos personales.</label>
                             <div class="tab-content">
-                              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tenetur, architecto, explicabo perferendis nostrum, maxime impedit atque odit sunt pariatur illo obcaecati soluta molestias iure facere dolorum adipisci eum? Saepe, itaque.
-                                    Litora cras urna lacinia himenaeos integer, posuere hendrerit arcu congue faucibus morbi, nulla malesuada
-                                    molestie risus. Molestie mi odio imperdiet magna vitae egestas risus velit luctus duis pretium sodales
-                                     volutpat, dictumst magnis tempus ac non inceptos nisi dignissim blandit justo consequat lectus. <a href="#">Ver mas...</a>
-                              </p>
+                              <p>Defina el rol que tiene la organizacion respecto a los datos personales que solicita y almacena:</p>
+                                <form action="" method="get">
+                                    <label for="datacon">Controlador de datos (Yo determino si el dato es procesado.)</label>
+                                    <input type="radio" name="roldata" id="datacon" value="datacon"><br>
+                                    <label for="datapro">Procesador de datos (Yo almaceno o proceso datos para alguien más.)</label>
+                                    <input type="radio" name="roldata" id="datapro" value="datapro"><br>
+                                    <input type="submit" value="Guardar">
+
+                                </form>
+                              
                             </div>
 
                     </article>
@@ -60,11 +65,17 @@
                             <input id="tab-dos" type="radio" name="tabs">
                             <label for="tab-dos">Tipos de información y formas de acceso.</label>
                             <div class="tab-content">
-                              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tenetur, architecto, explicabo perferendis nostrum, maxime impedit atque odit sunt pariatur illo obcaecati soluta molestias iure facere dolorum adipisci eum? Saepe, itaque.
-                                    Litora cras urna lacinia himenaeos integer, posuere hendrerit arcu congue faucibus morbi, nulla malesuada
-                                    molestie risus. Molestie mi odio imperdiet magna vitae egestas risus velit luctus duis pretium sodales
-                                     volutpat, dictumst magnis tempus ac non inceptos nisi dignissim blandit justo consequat lectus. <a href="#">Ver mas...</a>
-                              </p>
+                                    <label for="tipoinfo"> Su empresa tiene una lista de todos los tipos de información personal que posee,
+                                         la fuente de esa información, con quién la comparte, qué hace con ella y cuánto tiempo la mantendrá.
+                                    </label>
+                                    <input type="radio" name="roldata" id="tipoinfo" value="datacon"><br>
+                                    <label for="tipoinfo">Su empresa cuenta con una política de privacidad de acceso público que describe 
+                                        todos los procesos relacionados con los datos personales.</label>
+                                    <input type="radio" name="roldata" id="tipoinfo" value="datapro"><br>
+                                    <label for="tipoinfo">Su política de privacidad debe incluir una base legal para explicar por qué la
+                                         compañía necesita procesar la información personal.</label>
+                                        <input type="radio" name="roldata" id="tipoinfo" value="datapro"><br>
+                                    <input type="submit" value="Guardar">
                             </div>
 
                     </article>
@@ -72,11 +83,28 @@
                             <input id="tab-tres" type="radio" name="tabs">
                             <label for="tab-tres">Administración y seguimiento.</label>
                             <div class="tab-content">
-                              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tenetur, architecto, explicabo perferendis nostrum, maxime impedit atque odit sunt pariatur illo obcaecati soluta molestias iure facere dolorum adipisci eum? Saepe, itaque.
-                                    Litora cras urna lacinia himenaeos integer, posuere hendrerit arcu congue faucibus morbi, nulla malesuada
-                                    molestie risus. Molestie mi odio imperdiet magna vitae egestas risus velit luctus duis pretium sodales
-                                     volutpat, dictumst magnis tempus ac non inceptos nisi dignissim blandit justo consequat lectus. <a href="#">Ver mas...</a>
-                              </p>
+                                    <label for="admon"> Su empresa ha nombrado a un oficial de protección de datos (DPO).
+                                       </label>
+                                       <input type="radio" name="roldata" id="tipoinfo" value="datacon"><br>
+                                       <label for="admon">Crea conciencia entre los responsables de la toma de decisiones sobre las pautas  de la RGPD.</label>
+                                       <input type="radio" name="roldata" id="tipoinfo" value="datapro"><br>
+                                       <label for="admon">Se asegura de que su seguridad técnica está actualizada.</label>
+                                        <input type="radio" name="roldata" id="tipoinfo" value="datapro"><br>
+                                        <label for="admon"> Capacita al personal para ser consciente de la protección de datos.
+                                        </label>
+                                        <input type="radio" name="roldata" id="tipoinfo" value="datacon"><br>
+                                        <label for="admon">Usted tiene una lista de sub-procesadores de datos y su política de privacidad menciona
+                                                el uso de este sub-procesador</label>
+                                        <input type="radio" name="roldata" id="tipoinfo" value="datapro"><br>
+                                        <label for="admon">Si su empresa opera fuera de la UE, ha designado a un representante dentro de la UE.</label>
+                                        <input type="radio" name="roldata" id="tipoinfo" value="datapro"><br>
+                                        <label for="admon"> Usted reporta incidentes de datos que involucran datos personales a la
+                                                    autoridad local y a las personas (los propietarios de los datos) involucrados.
+                                         </label>
+                                        <input type="radio" name="roldata" id="tipoinfo" value="datacon"><br>
+                                        <label for="admon">Hay un contrato en firme con cualquier procesador de datos con el que comparte datos.</label>
+                                        <input type="radio" name="roldata" id="tipoinfo" value="datapro"><br>
+                                                     
                             </div>
 
                     </article>
@@ -84,11 +112,25 @@
                             <input id="tab-cuatro" type="radio" name="tabs">
                             <label for="tab-cuatro">Administración de los usuarios.</label>
                             <div class="tab-content">
-                              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tenetur, architecto, explicabo perferendis nostrum, maxime impedit atque odit sunt pariatur illo obcaecati soluta molestias iure facere dolorum adipisci eum? Saepe, itaque.
-                                    Litora cras urna lacinia himenaeos integer, posuere hendrerit arcu congue faucibus morbi, nulla malesuada
-                                    molestie risus. Molestie mi odio imperdiet magna vitae egestas risus velit luctus duis pretium sodales
-                                     volutpat, dictumst magnis tempus ac non inceptos nisi dignissim blandit justo consequat lectus. <a href="#">Ver mas...</a>
-                              </p>
+                                    <label for="admonUsers"> Sus clientes pueden solicitar fácilmente acceso a su información personal. 
+                                        </label>
+                                        <input type="radio" name="roldata" id="tipoinfo" value="datacon"><br>
+                                        <label for="admoUsersn">Sus clientes pueden actualizar fácilmente su propia información personal para mantenerla precisa.</label>
+                                        <input type="radio" name="roldata" id="tipoinfo" value="datapro"><br>
+                                        <label for="admonUsers">Elimina automáticamente los datos que su empresa ya no utiliza.</label>
+                                         <input type="radio" name="roldata" id="tipoinfo" value="datapro"><br>
+                                         <label for="admonUsers"> Sus clientes pueden solicitar fácilmente la supresión de sus datos personales.
+                                         </label>
+                                         <input type="radio" name="roldata" id="tipoinfo" value="datacon"><br>
+                                         <label for="admonUsers">Sus clientes pueden solicitar fácilmente que deje de procesar sus datos.</label>
+                                         <input type="radio" name="roldata" id="tipoinfo" value="datapro"><br>
+                                         <label for="admonUsers">Sus clientes pueden solicitar fácilmente que sus datos sean entregados a sí mismos o a un tercero.</label>
+                                         <input type="radio" name="roldata" id="tipoinfo" value="datapro"><br>
+                                         <label for="admonUsers"> Sus clientes pueden objetar fácilmente la creación de perfiles o la toma de decisiones 
+                                             automatizadas que puedan impactarlos.
+                                          </label>
+                                         <input type="radio" name="roldata" id="tipoinfo" value="datacon"><br>
+                                         
                             </div>
 
                     </article>
@@ -96,11 +138,18 @@
                             <input id="tab-cinco" type="radio" name="tabs">
                             <label for="tab-cinco">Autorizaciones.</label>
                             <div class="tab-content">
-                              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tenetur, architecto, explicabo perferendis nostrum, maxime impedit atque odit sunt pariatur illo obcaecati soluta molestias iure facere dolorum adipisci eum? Saepe, itaque.
-                                    Litora cras urna lacinia himenaeos integer, posuere hendrerit arcu congue faucibus morbi, nulla malesuada
-                                    molestie risus. Molestie mi odio imperdiet magna vitae egestas risus velit luctus duis pretium sodales
-                                     volutpat, dictumst magnis tempus ac non inceptos nisi dignissim blandit justo consequat lectus. <a href="#">Ver mas...</a>
-                              </p>
+                                    <label for="admonUsers"> Cuando el procesamiento se base en el consentimiento, dicho consentimiento debe ser dado libremente, específico, informado y revocable. 
+                                        </label>
+                                        <input type="radio" name="roldata" id="tipoinfo" value="datacon"><br>
+                                        <label for="admoUsersn">Su política de privacidad debe ser escrita en términos claros y comprensibles. </label>
+                                        <input type="radio" name="roldata" id="tipoinfo" value="datapro"><br>
+                                        <label for="admonUsers">Debe ser tan fácil para sus clientes retirar el consentimiento como lo fue para darlo la primera vez.</label>
+                                         <input type="radio" name="roldata" id="tipoinfo" value="datapro"><br>
+                                         <label for="admonUsers"> Si usted procesa los datos personales de menores de edad, verifique su edad y solicite el consentimiento de su tutor legal.
+                                         </label>
+                                         <input type="radio" name="roldata" id="tipoinfo" value="datacon"><br>
+                                         <label for="admonUsers">Cuando actualiza su política de privacidad, le informa a los clientes existentes.</label>
+                                         <input type="radio" name="roldata" id="tipoinfo" value="datapro"><br>
                             </div>
 
                     </article>
@@ -114,12 +163,19 @@
                     <article>
                         <h2>INFORMACIÓN GENERAL</h2>
                         <p>
-                            Lorem ipsum dolor sit amet consectetur adipiscing elit, phasellus faucibus cursus platea congue nibh,
-                            elementum nisi consequat gravida potenti vehicula. Facilisi enim orci a mauris himenaeos ullamcorper
-                            diam volutpat posuere conubia metus dignissim, porta taciti congue accumsan vel euismod tortor
-                            per hendrerit massa gravida, sapien magnis odio lobortis feugiat dictumst nunc ornare imperdiet
-                            sociis mattis. Imperdiet sociosqu parturient laoreet quisque hac diam purus dui, tristique 
-                            aptent id taciti nunc quis sem dictum, vel commodo bibendum justo augue vitae urna. <a href="#">Ver mas...</a>
+                                Obliga a todas la empresas u organizaciones que recolecten y procesen datos a proteger los datos
+                                personales de los ciudadanos de la Unión europea por medio del uso de seudónimos y la anonimacion
+                                de su identidad. Para esto, deben apoyarse en el concepto de privacidad por diseño o desde el diseño y
+                                por omisión. Poniendo todas las medidas técnicas y organizativas para salvaguardar los datos
+                                personales.
+                                
+                                Las organizaciones que necesiten la información de los usuarios, deben manifestar el uso y
+                                procesamiento que tendrán estos, de una manera clara y precisa. Por el lado de los usuarios, en el
+                                momento que entreguen sus datos, deben proporcionar su consentimiento explícito al respecto.
+                                En el momento de la recolección de datos hay que tener en cuenta la edad de los propietarios de los
+                                datos.
+                                El propietario de los datos debe tener la posibilidad de revocar la autorización dada de una forma fácil y
+                                rápida, permitiendo la eliminación de su información de forma definitiva. <a href="#">Ver mas...</a>
                         </p>
                         
                     </article>
@@ -127,24 +183,28 @@
                 </section>
                 
                 <aside class="col-3 col-s-12">
-                    <h3 class="noticias">NOTICIAS</h3>
-                    <article class="reciente1">
-                        <p>
-                                <a href="#">Noticia uno</a><br>
-                                Mollis quis interdum elementum eros felis morbi eleifend ad,
-                                  malesuada urna commodo himenaeos dictumst sed class cursus convallis
-        
-                        </p>
-        
-                    </article>
-                    <article class="reciente2">
-                        <p>
-                            <a href="#">Noticia Dos</a>   <br> 
-                            Nullam tortor est a potenti torquent donec, fermentum phasellus senectus metus iaculis primis,
-                                 per litora curae inceptos nostra. , massa cras curae donec.
-                        </p>
-                    </article>
-                </aside>
+                        <h3 class="noticias">NOTICIAS</h3>
+                        <article class="reciente1">
+                            <p>
+                                    <a href="#tab-uno">¿Cómo afecta a las empresas colombianas, el nuevo reglamento europeo de protección de datos personales?</a><br>
+                                    Mucho se ha especulado sobre el nuevo reglamento general de protección de datos personales europeo, 
+                                              en adelante GDPR (siglas en inglés), en especial, sobre las nuevas obligaciones a las empresas establecidas o no, 
+                                              en la Unión Europea, así como derechos y facultades de los titulares de los datos, pero también, por la extraterritorialidad 
+                                              de la norma. <a href="https://habeasdata.com.co/gdpr-colombia/" target="_blank">Ver mas...</a>
+            
+                            </p>
+            
+                        </article>
+                        <article class="reciente2">
+                            <p>
+                                <a href="#tab-dos">Lejos de proteger nuestros datos en América Latina - 3 May 2018 - El Espectador</a>   <br> 
+                                Este mes entra en vigor el marco normativo de la Unión Europea para 
+                                              protección de datos personales. Mientras las compañías de internet modifican sus políticas 
+                                                para prestar servicios a usuarios europeos donde se encuentren, en América Latina siguen pendientes
+                                               reformas que permitan una protección efectiva de datos.<a href="https://www.elespectador.com/tecnologia/lejos-de-proteger-nuestros-datos-en-america-latina-articulo-753704" target="_blank">Ver mas...</a>
+                            </p>
+                        </article>
+                    </aside>
                 
                 
             </main>
