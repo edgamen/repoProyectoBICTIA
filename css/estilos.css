@@ -15,8 +15,6 @@
 [class*="col-"], button {
     width: 99.5%;
     margin-top: 0;
-    
-    
 }
 
 /* Para tablets*/
@@ -32,11 +30,11 @@
     .col-s-9 {width: 75%;}
     .col-s-10 {width: 83.33%;}
     .col-s-11 {width: 91.66%;}
-    .col-s-12 {width: 100%;}
+    .col-s-12 {width: 99.5%;}
 
     aside{font-size: 0.87em;}
     .noticias{margin: 16px 1% 0% 1%;}
-    .col-251 {width: 19.5%;}
+    .col-251 {width: 19.4%;}
         
 } 
 
@@ -74,7 +72,6 @@ input[type=email], select, textarea {
     resize: vertical;
 }
 
-
 label {
     padding: 12px 12px 12px 0;
     display: inline-block;
@@ -107,13 +104,11 @@ label {
 
 /*Se agregan clases para manejar un grid de 12 sectores*/
 
-
 body{
     
    /* background-color: rgb(22, 78, 156);*/
     background-color: rgb(118, 154, 203);
     font-family: 'Open Sans','Roboto', sans-serif;
-
 }
 /*Estilo para menu boton activo*/
 body#inicio ul.menu li:nth-child(1) a,
@@ -143,7 +138,6 @@ header nav ul{
     list-style-type: none;
     padding-left: 0px;
     height: 100%;
-    
     margin: 0;
     text-align: center;
 
