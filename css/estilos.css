@@ -13,7 +13,7 @@
 
 /* Para mobile: */
 [class*="col-"] {
-    width: 100%;
+    width: 99.5%;
     
     
 }
@@ -67,6 +67,16 @@ body{
     font-family: 'Open Sans','Roboto', sans-serif;
 
 }
+
+body#inicio ul.menu li:nth-child(1) a,/*Estilo para menu boton activo*/
+body#listachequeorgpd ul.menu li:nth-child(2) a,
+body#inforgpd ul.menu li:nth-child(3) a,
+body#noticias ul.menu li:nth-child(4) a,
+body#contacto ul.menu li:nth-child(5) a{
+    background-color: #E3DAC9;
+    border: 1px solid #181818; 
+}
+
 header{
     background-color: rgb(22, 78, 156);
     border: 1px solid blue;
@@ -107,11 +117,12 @@ header nav ul li{
 
 header nav ul li a:visited{
     
-    color: rgb(168, 193, 226);
+    color: rgb(68, 70, 71);
         
 }
 
 header nav ul li a:hover{
+    color: #181818;
     border: 1px solid #181818;
     background-color: #E3DAC9;
     font-weight: bolder;
@@ -133,7 +144,7 @@ header nav ul li a{
     
     padding: 14px 16px;*/
     
-
+    color: rgb(168, 193, 226);
     font-size: large;
     /*color: #181818;*/
     /*color: #E3DAC9;
@@ -159,8 +170,12 @@ p{
     margin: 2%;
     
 }
+/*label{
+    background-color: rgba(0,0,0,0.12)
+}*/
 
 .noticias{
+    
     background-color: rgb(98, 139, 197);
     margin:12px 1% 0% 1% ;
     border-radius: 2px;
@@ -179,6 +194,7 @@ p{
     text-decoration: none;
 }
 aside{
+    /*position: fixed;*/
     overflow: auto;
     display: inline-block;
     /*float: right;
@@ -322,6 +338,35 @@ footer ul li a{
     padding-bottom: 3px;
     text-decoration: none;
     margin: 0% 2%;
+}
+
+footer ul li a:visited{
+    
+    color: rgb(37, 38, 39);
+    padding-bottom: 3px;
+    text-decoration: none;
+    margin: 0% 2%;
+}
+
+footer ul li a:hover{
+    
+    color: rgb(168, 193, 226);
+    font-weight: bold;
+    padding-bottom: 3px;
+    text-decoration: none;
+    margin: 0% 2%;
+}
+footer ul li a:active{
+    
+    font-weight: bolder;
+}
+
+#formulario{
+    text-align: center;
+}
+button{
+    color: #181818;
+    background-color: rgb(98, 139, 197);
 }
 
 h1{
