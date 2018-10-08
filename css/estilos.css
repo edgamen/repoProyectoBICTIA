@@ -12,8 +12,9 @@
 }
 
 /* Para mobile: */
-[class*="col-"] {
+[class*="col-"], button {
     width: 99.5%;
+    margin-top: 0;
     
     
 }
@@ -32,8 +33,11 @@
     .col-s-10 {width: 83.33%;}
     .col-s-11 {width: 91.66%;}
     .col-s-12 {width: 100%;}
-    
-    
+
+    aside{font-size: 0.87em;}
+    .noticias{margin: 16px 1% 0% 1%;}
+    .col-251 {width: 19.5%;}
+        
 } 
 
 /* Para escritorio */
@@ -41,7 +45,7 @@
     .col-1 {width: 8.33%;}
     .col-2 {width: 16.66%;}
     .col-25 {width: 20%;}
-    .col-251 {width: 19.6%;}
+    .col-251 {width: 19.5%;}
     .col-3 {width: 24.5%;}/*Se cambia de 25%*/
     .col-4 {width: 33.33%;}
     .col-5 {width: 41.66%;}
@@ -53,9 +57,53 @@
     .col-11 {width: 91.66%;}
     .col-12 {width: 100%;}
 } 
+/*Codigo de estilo para formulario**/
+
+input[type=text], select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    resize: vertical;
+}
+input[type=email], select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    resize: vertical;
+}
 
 
-/*https://www.w3schools.com/css/tryit.asp?filename=tryresponsive_col-s*/
+label {
+    padding: 12px 12px 12px 0;
+    display: inline-block;
+}
+.contenedor {
+    width: 95%;
+    border-radius: 5px;
+    background-color: #E3DAC9 ;
+    padding: 20px;
+}
+
+.col-25f {
+    float: left;
+    width: 25%;
+    margin-top: 6px;
+}
+
+.col-75f {
+    float: left;
+    width: 75%;
+    margin-top: 6px;
+}
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+/* Fin de codigo de estilo para formulario**/
 
 /*Se agregan clases para manejar un grid de 12 sectores*/
 
@@ -67,8 +115,8 @@ body{
     font-family: 'Open Sans','Roboto', sans-serif;
 
 }
-
-body#inicio ul.menu li:nth-child(1) a,/*Estilo para menu boton activo*/
+/*Estilo para menu boton activo*/
+body#inicio ul.menu li:nth-child(1) a,
 body#listachequeorgpd ul.menu li:nth-child(2) a,
 body#inforgpd ul.menu li:nth-child(3) a,
 body#noticias ul.menu li:nth-child(4) a,
@@ -84,15 +132,10 @@ header{
 header nav{
     background-color: rgb(53, 99, 163);
     float: right;
-    /*width: 100%;*/
     text-align: center;
-    
     margin:0px auto;
-    
-    
+    /*width: 100%;*/
 }
-
-
 
 header nav ul{
    
@@ -109,10 +152,9 @@ header nav ul{
 header nav ul li{
     list-style-type: none;
     display: inline-block;
-    /*width: 19%;*/
     height: 100%;
     float:left;
-            
+    /*width: 19%;*/
 }
 
 header nav ul li a:visited{
@@ -127,10 +169,9 @@ header nav ul li a:hover{
     background-color: #E3DAC9;
     font-weight: bolder;
     text-decoration: underline;
-    /*font-size: large;**/
     transition: 2s;
     box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);/*Se agregan sombras*/
-    
+    /*font-size: large;**/
 }
 
 header nav ul li a:active {
@@ -140,18 +181,16 @@ header nav ul li a:active {
 
 
 header nav ul li a{
-    /*display: block;
-    
-    padding: 14px 16px;*/
-    
-    color: rgb(168, 193, 226);
-    font-size: large;
-    /*color: #181818;*/
-    /*color: #E3DAC9;
-    padding-bottom: 3px;*/
     padding:20px;
 	display:block;
     text-decoration: none;
+    color: rgb(168, 193, 226);
+    font-size: large;
+    /*display: block;
+    padding: 14px 16px;*/
+    /*color: #181818;*/
+    /*color: #E3DAC9;
+    padding-bottom: 3px;*/
 }
 /*header nav ul li span {
 	margin-right:10px;
@@ -194,35 +233,37 @@ p{
     text-decoration: none;
 }
 aside{
-    /*position: fixed;*/
     overflow: auto;
     display: inline-block;
-    /*float: right;
-    position: relative;*/
     width: 24.5%;
-    /*background-color: rgb(98, 139, 197);*/
     color: #181818;
     font-size: normal;
     vertical-align: top;
     margin: 0.25%;
     box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);/*Se agregan sombras*/
+    /*position: fixed;*/
+    /*background-color: rgb(98, 139, 197);*/
+    /*float: right;
+    position: relative;*/
 }
 
+.politica{
+    text-align: justify;
+    width: 100%;
+}
 section{
     background-color: #E3DAC9;
-    
     float: left;
-    /*background-color: rgb(168, 193, 226);*/
-    
     width: 75%;
-    /*border: 1px solid yellow;*/
     margin: 0px;
+    /*background-color: rgb(168, 193, 226);*/
+    /*border: 1px solid yellow;*/
 }
 
 .acordeon {
     float: left;
-   /* width: 50%;*/
     padding: 0 1em;
+   /* width: 50%;*/
   }
   /* Acordeon styles */
   .tab {
@@ -246,9 +287,7 @@ section{
     line-height: 3;
     cursor: pointer;
   }
-  /*.blue label {
-    background: #2980b9;
-  }*/
+ 
   .tab-content {
     max-height: 0;
     overflow: hidden;
@@ -257,9 +296,7 @@ section{
     -o-transition: max-height .35s;
     transition: max-height .35s;
   }
-  /*.blue .tab-content {
-    background: #3498db;
-  }*/
+  
   .tab-content p {
     margin: 1em;
   }
@@ -305,14 +342,14 @@ article{
 footer{
     float: left;
     background-color: rgb(118, 154, 203);
-   /* background-color: rgb(168, 193, 226);
-    background-color: rgb(255, 227, 154);
-    border: 1px solid white;*/
     display: inline-table;
     width: 100%;
     vertical-align: bottom;
     box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);/*Se agregan sombras*/
-
+    /* background-color: rgb(168, 193, 226);
+     background-color: rgb(255, 227, 154);
+     border: 1px solid white;*/
+    
 }
 
 footer ul{
@@ -324,11 +361,10 @@ footer ul{
 footer ul li{
     text-align: center;
     list-style-type: none;
-    
     display: inline-block;
+    width: 19.6%;
     /*float: left;
     padding-left: 10px;*/
-    width: 19.6%;
     
 }
 
@@ -367,18 +403,30 @@ footer ul li a:active{
 button{
     color: #181818;
     background-color: rgb(98, 139, 197);
+    padding: 12px 20px;
+    border: none;
+    border-radius: 2px;
+    cursor: pointer;
+    float: left;
+}
+button:hover{
+    color: #181818;
+    background-color: rgba(98, 139, 197,0.8);
+    padding: 12px 20px;
+    border: none;
+    border-radius: 2px;
+    cursor: pointer;
+    float: left;
 }
 
 h1{
     text-align: right;
-    /*color: rgb(255, 227, 154);*/
     color: #E3DAC9;
     margin-left: 2%;
     margin-right: 2%;
+    /*color: rgb(255, 227, 154);*/
     /*margin-top: 0%;
     margin-bottom: 0%;*/
-
-
 }
 
 h2{
@@ -408,7 +456,3 @@ h4{
 h6{
     text-align: center;
 }
-
-
-
-

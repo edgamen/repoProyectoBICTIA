@@ -50,18 +50,32 @@
                         <h4>
                             Formulario de contacto.
                         </h4>
-
+                        <div class="contenedor">
                         <form action="post">
-                            <p>Nombre: <input type="text"></p>
-                            <p>Email: <input type="email"></p>
-                            <p>Mensaje: <input type="text" maxlength="150"> Max. 150 caracteres.</p>
+                            <div class="row">
+                                    <div class="col-25f"> <label>Nombre:</label> </div>
+                                    <div class="col-75f"><input type="text" placeholder="Su nombre"> </div>
+                            </div>
+                            <div class="row">
+                                    <div class="col-25f"> <label>Email:</label> </div>
+                                    <div class="col-75f"><input type="email" placeholder="Su correo eléctronico"> </div>
+                            </div>
+                            <div class="row">
+                                    <div class="col-25f"> <label>Mensaje: </label> </div>
+                                    <div class="col-75f"><textarea id="subject" name="subject" placeholder="Escriba su mensaje, por favor..." style="height:150px"></textarea></div>
+                            </div>
+                            
                             <p>¿Desea que guardemos sus datos para posterior contacto? :</p>
                             <p> <input type="checkbox" name="pdacepto" >Si acepto.</p>
                             <p> <input type="checkbox" name="pdnoacepto">No acepto.</p>
-                            <p>¿Reconoce haber leído y aceptar la política de protección de datos del sitio?<br> Si <input type="checkbox" name="tycacepto"> No <input type="checkbox" name="tycnoacepto"></p>
-                            <p><button type="button">Enviar</button></p>
+                            
+                            <p>¿Reconoce haber leído y aceptar la política de protección de datos del sitio? :</p>
+                            <p> <input type="checkbox" name="tycacepto">Si, he leído.</p>
+                            <p> <input type="checkbox" name="tycnoacepto">No, he leído.</p>
+                            
+                            <div class="row"><button type="button">Enviar</button></div>
                         </form>
-                          
+                        </div>   
 
                     </article>
                    
