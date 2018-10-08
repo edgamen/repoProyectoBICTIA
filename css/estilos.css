@@ -67,6 +67,15 @@ body{
     font-family: 'Open Sans','Roboto', sans-serif;
 
 }
+
+body#inicio ul.menu li:nth-child(1) a,/*Estilo para menu boton activo*/
+body#listachequeorgpd ul.menu li:nth-child(2) a,
+body#inforgpd ul.menu li:nth-child(3) a,
+body#noticias ul.menu li:nth-child(4) a,
+body#contacto ul.menu li:nth-child(5) a{
+    background-color: #E3DAC9;
+}
+
 header{
     background-color: rgb(22, 78, 156);
     border: 1px solid blue;
@@ -328,6 +337,27 @@ footer ul li a{
     padding-bottom: 3px;
     text-decoration: none;
     margin: 0% 2%;
+}
+
+footer ul li a:visited{
+    
+    color: rgb(37, 38, 39);
+    padding-bottom: 3px;
+    text-decoration: none;
+    margin: 0% 2%;
+}
+
+footer ul li a:hover{
+    
+    color: rgb(168, 193, 226);
+    font-weight: bold;
+    padding-bottom: 3px;
+    text-decoration: none;
+    margin: 0% 2%;
+}
+footer ul li a:active{
+    
+    font-weight: bolder;
 }
 
 #formulario{
